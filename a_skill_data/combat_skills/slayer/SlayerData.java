@@ -1,0 +1,132 @@
+package scripts.main_package.a_skill_data.combat_skills.slayer;
+
+public class SlayerData {
+
+    public enum SlayerSettings {
+
+        ;
+
+        SlayerSettings() {
+
+        }
+
+    }
+
+    // 0 Might mean no slayer task, need to get one
+    // Varbit 4067 went to 1 for 0 on first slayer task
+//    public static SlayerTask
+//
+//            aberrantSpectres = new SlayerTask(-1, aberrantSpectresM),
+//            abyssalDemons = new SlayerTask(-1, abyssalDemonsM),
+//            adamantDragons = new SlayerTask(-1, adamantDragonsM),
+//            ankous = new SlayerTask(-1, ankousM),
+//            aviansie = new SlayerTask(-1, aviansieM),
+//            bandits = new SlayerTask(-1, banditsM),
+//            banshees = new SlayerTask(38, bansheesM),
+//            basilisks = new SlayerTask(-1, basilisksM),
+//            bats = new SlayerTask(8 ,batsM),
+//            bears = new SlayerTask(13, bearsM),
+//            birds = new SlayerTask(5, birdsM),
+//            blackDemons = new SlayerTask(30, blackDemonsM), //TODO very incomplete
+//            blackDragons = new SlayerTask(-1, blackDragonsM),
+//            blackKnights = new SlayerTask(-1, blackKnightsM),
+//            bloodVelds = new SlayerTask(48, bloodVeldsM), // 48
+//            blueDragons = new SlayerTask(-1, blueDragonsM),
+//            brineRats = new SlayerTask(-1, brineRatsM),
+//            bronzeDragons = new SlayerTask(58, bronzeDragonsM),
+//            catablepon = new SlayerTask(-1, catableponM),
+//            caveBugs = new SlayerTask(63, caveBugsM),
+//            caveCrawlers = new SlayerTask(37, caveCrawlersM),
+//            caveHorrors = new SlayerTask(-1, caveHorrorsM),
+//            caveSlimes = new SlayerTask(62, caveSlimesM),
+//            caveKraken = new SlayerTask(-1, caveKrakenM),
+//            chaosDruids = new SlayerTask(-1, chaosDruidsM),
+//            cockatrices = new SlayerTask(-1, cockatricesM),
+//            cows = new SlayerTask(6, cowsM),
+//            crawlingHands = new SlayerTask(39, crawlingHandsM),
+//            crocodiles = new SlayerTask(-1, crocodilesM),
+//            dagannoths = new SlayerTask(35, dagannothsM),
+//            darkBeasts = new SlayerTask(-1, darkBeastsM),
+//            darkWarriors = new SlayerTask(-1, darkWarriorsM),
+//            dogs = new SlayerTask(22, dogsM),
+//            drakes = new SlayerTask(-1, drakesM),
+//            dustDevils = new SlayerTask(-1, dustDevilsM),
+//            dwarves = new SlayerTask(57, dwarvesM),
+//            earthWarriors = new SlayerTask(54, earthWarriorsM),
+//            elves = new SlayerTask(-1, elvesM),
+//            ent = new SlayerTask(-1, entM),
+//            feverSpiders = new SlayerTask(-1, feverSpidersM),
+//            fireGiants = new SlayerTask(16, fireGiantsM), //TODO need to add diff location due to stone boots
+//            fleshCrawlers = new SlayerTask(-1, fleshCrawlersM),
+//            fossilIslandWyvern = new SlayerTask(-1, fossilIslandWyvernM),
+//            gargoyles = new SlayerTask(-1, gargoylesM),
+//            ghosts = new SlayerTask(12, ghostsM),
+//            ghouls = new SlayerTask(-1, ghoulsM),
+//            goblins = new SlayerTask(2, goblinsM),
+//            greaterDemons = new SlayerTask(29, greaterDemonsM),
+//            greenDragons = new SlayerTask(-1, greenDragonsM),
+//            harpieBugSwarms = new SlayerTask(-1, harpieBugSwarmsM),
+//            hellhounds = new SlayerTask(31, hellhoundsM),
+//            hillGiant = new SlayerTask(-1, hillGiantM),
+//            hobGoblins = new SlayerTask(-1, hobGoblinsM),
+//            hydras = new SlayerTask(-1, hydrasM),
+//            icefiends = new SlayerTask(75, icefiendsM),
+//            iceGiants = new SlayerTask(-1, iceGiantsM),
+//            iceWarriors = new SlayerTask(-1, iceWarriorsM),
+//            infernalMages = new SlayerTask(-1, infernalMagesM),
+//            ironDragons = new SlayerTask(-1, ironDragonsM),
+//            jellies = new SlayerTask(50, jelliesM),
+//            jungleHorrors = new SlayerTask(-1, jungleHorrorsM),
+//            kalphites = new SlayerTask(53, kalphitesM),
+//            killerwatts = new SlayerTask(-1, killerwattsM),
+//            kurasks = new SlayerTask(45, kurasksM),
+//            lavaDragons = new SlayerTask(-1, lavaDragonsM),
+//            lesserDemons = new SlayerTask(28, lesserDemonsM),
+//            lizardmen = new SlayerTask(-1, lizardmenM),
+//            lizards = new SlayerTask(68, lizardsM),
+//            magicAxes = new SlayerTask(-1, magicAxesM),
+//            mammoth = new SlayerTask(-1, mammothM),
+//            mithrilDragons = new SlayerTask(-1, mithrilDragonsM),
+//            minotaurs = new SlayerTask(76, minotaursM),
+//            mogres = new SlayerTask(-1, mogresM),
+//            molanisks = new SlayerTask(-1, molanisksM),
+//            monkeys = new SlayerTask(1, monkeysM),
+//            mossGiants = new SlayerTask(17, mossGiantsM),
+//            nechryael = new SlayerTask(52, nechryaelM),
+//            ogres = new SlayerTask(-1, ogresM),
+//            otherworldBeings = new SlayerTask(-1, otherworldBeingsM),
+//            pirate = new SlayerTask(-1, pirateM),
+//            pyrefiends = new SlayerTask(-1, pyrefiendsM),
+//            rats = new SlayerTask(3, ratsM),
+//            redDragons = new SlayerTask(-1, redDragonsM),
+//            revenants = new SlayerTask(-1, revenantsM),
+//            rockslugs = new SlayerTask(-1, rockslugsM),
+//            rogues = new SlayerTask(-1, roguesM),
+//            runeDragons = new SlayerTask(-1, runeDragonsM),
+//            scabarites = new SlayerTask(-1, scabaritesM),
+//            scorpions = new SlayerTask(7, scorpionsM),
+//            seaSnakes = new SlayerTask(-1, seaSnakesM),
+//            shades = new SlayerTask(-1, shadesM),
+//            shadowWarriors = new SlayerTask(-1, shadowWarriorsM),
+//            skeletalWyverns = new SlayerTask(72, skeletalWyvernsM),
+//            skeletons = new SlayerTask(11, skeletonsM),
+//            smokeDevils = new SlayerTask(-1, smokeDevilsM),
+//            sourhogs = new SlayerTask(121, sourhogsM),
+//            spiders = new SlayerTask(4, spidersM),
+//            spiritualCreatures = new SlayerTask(-1, spiritualCreaturesM),
+//            steelDragons = new SlayerTask(-1, steelDragonsM),
+//            suqahs = new SlayerTask(-1, suqahsM),
+//            terrorDogs = new SlayerTask(-1, terrorDogsM),
+//            trolls = new SlayerTask(-1, trollsM),
+//            turoths = new SlayerTask(-1, turothsM),
+//            vampyres = new SlayerTask(-1, vampyresM),
+//            wallBeasts = new SlayerTask(61, wallBeastsM),
+//            waterfiends = new SlayerTask(88, waterfiendsM),
+//            werewolves = new SlayerTask(-1, werewolvesM),
+//            wolves = new SlayerTask(9, wolvesM),
+//            wyrms = new SlayerTask(111, wyrmsM),
+//            zombies = new SlayerTask(10, zombiesM),
+//            zygomites = new SlayerTask(-1, zygomitesM)
+//    ;
+
+}
